@@ -16,7 +16,7 @@ app.use("/api", contactRoutes);
 
 // MongoDB Connection
 mongoose
-    .connect("mongodb://localhost:27017/contact", {
+    .connect("mongodb+srv://yashkapadiya191:DFN5hii4KjeZVuvw@cluster0.exvvwph.mongodb.net/", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
