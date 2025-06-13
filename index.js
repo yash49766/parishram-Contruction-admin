@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-
+const contactRoutes = require("./routes/contactRoutes");
 
 const app = express();
 
@@ -10,8 +10,6 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-const contactRoutes = require("./routes/contactRoutes");
-
 app.use("/api", contactRoutes);
 
 // MongoDB Connection
